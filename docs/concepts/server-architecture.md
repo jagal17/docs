@@ -6,7 +6,7 @@ title: Server Architecture
 ## Overview
 
 
-The Qodly platform backend relies on **Qodly Server**. Qodly Server is actually a full stack of integrated servers and development layers and supports all necessary requirements to develop, test, and deploy business web applications. 
+The Qodly platform backend relies on **Qodly Server**. Qodly Server is actually a full stack of integrated servers and development layers and supports all necessary requirements to develop, test, deploy and manage business web applications. 
 
 Qodly Server includes:
 
@@ -24,13 +24,13 @@ Qodly Server includes:
 
 All these elements are included in one single executable running under Linux OS, providing the best performances by eliminating unnecessary intermediary connectors.
 
-In the development environment, Qodly Studio connects to Qodly Server and interacts with all the server layers to develop and build the application through dedicated editors (model, web forms, etc.).
+In the development environment, Qodly Studio connects to Qodly Server and interacts with all the server layers to develop and build the application through dedicated editors (data model, web forms, etc.).
 
-In the staging and production environments, the same Qodly Server is also used to handle and process requests from the browsers. 
+In the staging and production environments, the same Qodly Server is also used to handle and process requests from the browsers and API. 
 
 ## HTTP Server
 
-The HTTP server handles all incoming requests. It provides a high level of security by supporting user sessions and their associated roles, connected to your own user directory in the cloud through **Amazon Cognito**. 
+The HTTP server handles all incoming requests. It provides a high level of security by supporting user sessions and their associated roles, connected to your own user directory in the cloud through API based on **AWS services**.
 
 ## REST Server
 
@@ -49,16 +49,16 @@ Datasources are a central concept to Qodly's architecture and are intended to ma
 
 ## DB4D and ORDA
 
-The Qodly relational database, named DB4D, has extended capabilities to store and process data. 
+The Qodly relational database, named QodlyDB based on DB4D, has extended capabilities to store and process data. 
 
-Data access is done through ORDA (*Object Relational Data Access*), an enhanced technology allowing to handle both the model and the data of a database as **objects**. With ORDA, the database is accessed through an abstraction layer, the **datastore** (which is an object itself). 
+Data access is done through ORDA (*Object Relational Data Access*), an enhanced technology developed by 4D allowing to handle both the model and the data of a database as **objects**. With ORDA, the database is accessed through an abstraction layer, the **datastore** (which is an object itself). 
 
 Instead of representing information as tables, records, and fields, ORDA uses a different approach that more accurately maps data to real world items and concepts. ORDA extends the capabilities and power of the database by allowing application logic to be implemented directly into the core of the data model. ORDA uses relational attributes, computed attributes and aliases like any other attribute, making application development particularly intuitive.
 
 
 ## QodlyScript language
 
-The QodlyScript language can be used at all levels of the application development on the server: to configure the model, the application layer, the datasources, the web forms, the events. No other language is required to develop a Qodly application. 
+The QodlyScript language can be used at all levels of the application development on the server: to configure the model, the application layer, the datasources, the web forms, the events. No other language is required to develop an end-to-end Qodly application. 
 
 QodlyScript is an object-oriented language containing built-in classes that you can extend, and also user classes. ORDA provides data model classes that are very efficient to handle data.  
 
