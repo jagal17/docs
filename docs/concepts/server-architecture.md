@@ -30,7 +30,7 @@ In the staging and production environments, the same Qodly Server is also used t
 
 ## HTTP Server
 
-The HTTP server handles all incoming requests. It provides a high level of security by supporting user sessions and their associated roles, connected to your own user directory in the cloud through **Amazon Cognito**. 
+The HTTP server handles all incoming requests. It provides a high level of security by supporting user sessions and their associated roles, connected to your own user directory managed by Qodly based on **AWS Cognito**. 
 
 ## REST Server
 
