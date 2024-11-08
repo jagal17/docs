@@ -12,7 +12,9 @@ Qodly is a global platform for developing, deploying, and running web applicatio
 - **Cloud Console**: Manage your deployments.
 
 Everything you need is included in your subscription. You can create your application from start to finish without installing anything.
+
 You can also extend your widgets by building or installing custom components in the Studio.
+
 The best way to start is by creating your Sandbox. It's completely free and perfect for trying out Qodly, exploring samples, and testing new features. You can even create a quick demo for your client before beginning your application. You'll have the option to clone it or start from scratch.
 
 ## Creating your Sandbox
